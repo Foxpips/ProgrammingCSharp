@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C479E24-74B6-4D54-A91E-B12F800594DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSExamTests</RootNamespace>
+    <AssemblyName>MSExamTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chapter1.2\PLinqForAll.cs" />
+    <Compile Include="Chapter1\1.31\ConcurrentBagTester.cs" />
+    <Compile Include="Chapter1\1.31\ConcurrentClassTesters.cs" />
+    <Compile Include="Chapter1\1.31\Person.cs" />
+    <Compile Include="Chapter1\AccessModifiers\AccessModifierClass.cs" />
+    <Compile Include="Chapter1\AccessModifiers\Person.cs" />
+    <Compile Include="Chapter1\AggregateEx.cs" />
+    <Compile Include="Chapter1\Casting\Money.cs" />
+    <Compile Include="Chapter1\DownloadContentAsyncTests.cs" />
+    <Compile Include="Chapter1\LocalDataThread.cs" />
+    <Compile Include="Chapter1\ParallelTests.cs" />
+    <Compile Include="Chapter1.2\PLinq.cs" />
+    <Compile Include="Chapter1\TaskFactory.cs" />
+    <Compile Include="Chapter1\TaskRunner.cs" />
+    <Compile Include="Chapter1\ThreadLoop.cs" />
+    <Compile Include="Chapter1\ThreadPooler.cs" />
+    <Compile Include="Chapter2\2.10\Card.cs" />
+    <Compile Include="Chapter2\2.14\Person.cs" />
+    <Compile Include="Chapter2\2.14\PersonExtensions.cs" />
+    <Compile Include="Chapter2\2.19\BoxingTests.cs" />
+    <Compile Include="Chapter2\2.1\EnumTests.cs" />
+    <Compile Include="Chapter2\2.24\Money.cs" />
+    <Compile Include="Chapter2\2.26\StringOverrideTester.cs" />
+    <Compile Include="Chapter2\2.2\PointBase.cs" />
+    <Compile Include="Chapter2\GenericTypesExample.cs" />
+    <Compile Include="Chapter2\MyNullable.cs" />
+    <Compile Include="Linq\OrderBy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SealedClassMocking\SealedClassMocking.csproj">
+      <Project>{7a055cec-ac23-42cd-b867-310c703b520d}</Project>
+      <Name>SealedClassMocking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsAsyncFormTester\WindowsAsyncFormTester.csproj">
+      <Project>{69F40EB1-0EDF-45E3-93F9-DE4F2CC0C959}</Project>
+      <Name>WindowsAsyncFormTester</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

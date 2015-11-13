@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A055CEC-AC23-42CD-B867-310C703B520D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgrammingTests</RootNamespace>
+    <AssemblyName>ProgrammingTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyLoadTests\AssemblyTests.cs" />
+    <Compile Include="Async\AsyncTester.cs" />
+    <Compile Include="Bomi\ICustomer.cs" />
+    <Compile Include="Bomi\Person.cs" />
+    <Compile Include="BoxingTests\BoxTest.cs" />
+    <Compile Include="Comparers\CountyComparer.cs" />
+    <Compile Include="CpuUsageProcessTests\CpuUsageTests.cs" />
+    <Compile Include="DataContractTests\DateContractTest.cs" />
+    <Compile Include="DateComparer\DateComparisonTests.cs" />
+    <Compile Include="DateTests\TestDates.cs" />
+    <Compile Include="DecimalTests\DecimalTester.cs" />
+    <Compile Include="DescriptiveEnums\EnumExtensions.cs" />
+    <Compile Include="DescriptiveEnums\EnumTests.cs" />
+    <Compile Include="DescriptiveEnums\ScheduleEnum.cs" />
+    <Compile Include="DictionaryTests\TryGetDictionaryTests.cs" />
+    <Compile Include="EnumTester\TestEnums.cs" />
+    <Compile Include="Extensions\FrameworkExtensions.cs" />
+    <Compile Include="FileReaderTests\FileReaderTester.cs" />
+    <Compile Include="FileStreamTests\FileReader.cs" />
+    <Compile Include="Generics\IPerson.cs" />
+    <Compile Include="Interfaces\InterfaceTester.cs" />
+    <Compile Include="JsonTests\JsonDynamicDeserializationTests.cs" />
+    <Compile Include="MappingTests\CbMapper.cs" />
+    <Compile Include="MappingTests\CbMapperWithResolver.cs" />
+    <Compile Include="MappingTests\ClaimBenefitDto.cs" />
+    <Compile Include="MappingTests\ClaimBenefitViewModel.cs" />
+    <Compile Include="MappingTests\DateResolver.cs" />
+    <Compile Include="MappingTests\TestMapper.cs" />
+    <Compile Include="DictionaryTests\TestMonth.cs" />
+    <Compile Include="MsTest.cs" />
+    <Compile Include="NullableDateTests\TestHasValue.cs" />
+    <Compile Include="PLinq\PlinqExceptions_2.cs" />
+    <Compile Include="SmallestNumberTest\buildLowestNumTests.cs" />
+    <Compile Include="SmallestNumberTest\SmallestNumberTests.cs" />
+    <Compile Include="StringConcatenationProfiling\StringProfiler.cs" />
+    <Compile Include="StringConcatenationProfiling\Timer.cs" />
+    <Compile Include="StringConcatenationTests\BuilderVsConcat.cs" />
+    <Compile Include="StringConcatenationTests\StringConcatTests.cs" />
+    <Compile Include="TimeSpanTests\AutoMapperTests.cs" />
+    <Compile Include="TimeSpanTests\Entity.cs" />
+    <Compile Include="TimeSpanTests\PersonTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeSpanTests\RecurrentTime.cs" />
+    <Compile Include="TimeSpanTests\RecurrentTimeBase.cs" />
+    <Compile Include="TimeSpanTests\TestOrderStringsAndNumbers.cs" />
+    <Compile Include="TimeSpanTests\TimeSpan.cs" />
+    <Compile Include="Tuple\DbObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
