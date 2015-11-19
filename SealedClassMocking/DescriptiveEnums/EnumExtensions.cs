@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 
-namespace SealedClassMocking.DescriptiveEnums
+namespace ProgrammingTests.DescriptiveEnums
 {
     public static class EnumExtensions
     {

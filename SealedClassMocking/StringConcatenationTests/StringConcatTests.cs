@@ -2,9 +2,8 @@
 using System.Diagnostics;
 using System.Threading;
 using NUnit.Framework;
-using SealedClassMocking.StringConcatenationProfiling;
 
-namespace SealedClassMocking.StringConcatenationTests
+namespace ProgrammingTests.StringConcatenationTests
 {
     public class StringConcatTests
     {

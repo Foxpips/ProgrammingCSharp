@@ -1,9 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
 using Rhino.Mocks;
-using Rhino.Mocks.Interfaces;
 
-namespace SealedClassMocking
+namespace ProgrammingTests.TimeSpanTests
 {
     public class PersonTests
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SealedClassMocking.TimeSpanTests
+namespace ProgrammingTests.TimeSpanTests
 {
     public abstract class RecurrentTimeBase
     {

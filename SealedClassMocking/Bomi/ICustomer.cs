@@ -1,4 +1,4 @@
-﻿namespace SealedClassMocking.Bomi
+﻿namespace ProgrammingTests.Bomi
 {
  
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using AutoMapper;
 using NUnit.Framework;
 
-namespace SealedClassMocking.Interfaces
+namespace ProgrammingTests.Interfaces
 {
     public class TestINonsense
     {

@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using NUnit.Framework;
 
-namespace SealedClassMocking.StringConcatenationProfiling
+namespace ProgrammingTests.StringConcatenationProfiling
 {
     public class StringProfiler
     {

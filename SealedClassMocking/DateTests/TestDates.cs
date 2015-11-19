@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace SealedClassMocking.DateTests
+namespace ProgrammingTests.DateTests
 {
     public class TestDates
     {

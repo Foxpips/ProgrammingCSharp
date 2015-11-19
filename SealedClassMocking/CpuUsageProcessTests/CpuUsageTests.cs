@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Text;
 using NUnit.Framework;
 
-namespace SealedClassMocking.CpuUsageProcessTests
+namespace ProgrammingTests.CpuUsageProcessTests
 {
     public class CpuUsageTests
     {

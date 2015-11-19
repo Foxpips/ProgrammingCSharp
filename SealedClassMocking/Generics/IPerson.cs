@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SealedClassMocking.Generics
+namespace ProgrammingTests.Generics
 {
     public interface IPerson<out TType> where TType : Adult, new()
     {

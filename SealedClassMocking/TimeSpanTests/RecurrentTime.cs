@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace SealedClassMocking.TimeSpanTests
+namespace ProgrammingTests.TimeSpanTests
 {
     public sealed class RecurrentTime : RecurrentTimeBase
     {

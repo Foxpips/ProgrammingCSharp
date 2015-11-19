@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace SealedClassMocking.DescriptiveEnums
+namespace ProgrammingTests.DescriptiveEnums
 {
     public class EnumTests
     {

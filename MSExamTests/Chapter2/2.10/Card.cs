@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using SealedClassMocking.Extensions;
+using ProgrammingTests.Extensions;
 
 namespace MSExamTests.Chapter2._2._10
 {

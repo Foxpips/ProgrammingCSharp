@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace SealedClassMocking.MappingTests
+namespace ProgrammingTests.MappingTests
 {
     public class CbMapper : Profile
     {

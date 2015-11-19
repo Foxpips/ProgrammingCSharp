@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace SealedClassMocking.DecimalTests
+namespace ProgrammingTests.DecimalTests
 {
     public class DecimalTester
     {

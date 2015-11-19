@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using SealedClassMocking.Comparers;
-using SealedClassMocking.Extensions;
+using ProgrammingTests.Comparers;
+using ProgrammingTests.Extensions;
 
-namespace SealedClassMocking.TimeSpanTests
+namespace ProgrammingTests.TimeSpanTests
 {
     public class TestOrderStringsAndNumbers
     {

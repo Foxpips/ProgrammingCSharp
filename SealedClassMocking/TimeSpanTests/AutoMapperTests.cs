@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using NUnit.Framework;
 
-namespace SealedClassMocking.TimeSpanTests
+namespace ProgrammingTests.TimeSpanTests
 {
     public class AutoMapperTests
     {

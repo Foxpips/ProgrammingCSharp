@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
-using SealedClassMocking.StringConcatenationProfiling;
+using ProgrammingTests.StringConcatenationProfiling;
 
-namespace SealedClassMocking.StringConcatenationTests
+namespace ProgrammingTests.StringConcatenationTests
 {
     public class TabDelimitedFormatter : IOutputFormatter<string>
     {

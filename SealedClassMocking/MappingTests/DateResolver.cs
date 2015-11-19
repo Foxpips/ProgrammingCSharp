@@ -1,8 +1,7 @@
 using System;
-using System.Globalization;
 using AutoMapper;
 
-namespace SealedClassMocking.MappingTests
+namespace ProgrammingTests.MappingTests
 {
     public class DateResolver : ValueResolver<ClaimBenefitDto, string>
     {

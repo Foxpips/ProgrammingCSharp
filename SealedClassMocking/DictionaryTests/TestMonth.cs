@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace SealedClassMocking.DictionaryTests
+namespace ProgrammingTests.DictionaryTests
 {
     public class TestMonth
     {

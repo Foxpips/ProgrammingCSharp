@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SealedClassMocking.Bomi
+namespace ProgrammingTests.Bomi
 {
     public interface ICustomer
     {

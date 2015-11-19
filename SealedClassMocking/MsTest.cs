@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.IO;
-using System.Runtime.Serialization;
 using NUnit.Framework;
 
-namespace SealedClassMocking
+namespace ProgrammingTests
 {
     public class MsTest
     {

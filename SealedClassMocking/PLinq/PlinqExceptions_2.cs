@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 
-namespace SealedClassMocking.PLinq
+namespace ProgrammingTests.PLinq
 {
     public class PlinqExceptions2
     {

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
-namespace SealedClassMocking.Extensions
+namespace ProgrammingTests.Extensions
 {
     public static class FrameworkExtensions
     {
@@ -19,6 +20,14 @@ namespace SealedClassMocking.Extensions
             {
                 currentCollection.Add(item);
             }
+        }
+
+        public static void SortSelf<T>(this IEnumerable<T> collection) where T : IComparable<T>
+        {
+            var array = collection.ToArray();
+            Array.Sort(array);
+        
+            collection = array;
         }
     }
 }

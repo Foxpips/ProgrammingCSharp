@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayTests\Box.cs" />
     <Compile Include="AssemblyLoadTests\AssemblyTests.cs" />
     <Compile Include="Async\AsyncTester.cs" />
     <Compile Include="Bomi\ICustomer.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="DateComparer\DateComparisonTests.cs" />
     <Compile Include="DateTests\TestDates.cs" />
     <Compile Include="DecimalTests\DecimalTester.cs" />
+    <Compile Include="DelegateTests\DelegateTests.cs" />
     <Compile Include="DescriptiveEnums\EnumExtensions.cs" />
     <Compile Include="DescriptiveEnums\EnumTests.cs" />
     <Compile Include="DescriptiveEnums\ScheduleEnum.cs" />
@@ -81,7 +83,13 @@
     <Compile Include="FileReaderTests\FileReaderTester.cs" />
     <Compile Include="FileStreamTests\FileReader.cs" />
     <Compile Include="Generics\IPerson.cs" />
+    <Compile Include="IEnumerbaleTests\CustomCollection.cs" />
+    <Compile Include="IEnumerbaleTests\CustomCollectionTests.cs" />
+    <Compile Include="IEnumerbaleTests\ICollectionItem.cs" />
+    <Compile Include="IEnumerbaleTests\Person.cs" />
+    <Compile Include="IEnumerbaleTests\PersonComparer.cs" />
     <Compile Include="Interfaces\InterfaceTester.cs" />
+    <Compile Include="IntTests\IntegerTester.cs" />
     <Compile Include="JsonTests\JsonDynamicDeserializationTests.cs" />
     <Compile Include="MappingTests\CbMapper.cs" />
     <Compile Include="MappingTests\CbMapperWithResolver.cs" />

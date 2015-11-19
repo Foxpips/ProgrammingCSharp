@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace SealedClassMocking.SmallestNumberTest
+namespace ProgrammingTests.SmallestNumberTest
 {
     public class BuildLowestNumTests
     {

@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using Timer = SealedClassMocking.StringConcatenationProfiling.Timer;
+using Timer = ProgrammingTests.StringConcatenationProfiling.Timer;
 
 namespace MSExamTests.Chapter1._2
 {

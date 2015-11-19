@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace SealedClassMocking.NullableDateTests
+namespace ProgrammingTests.NullableDateTests
 {
     public class TestHasValue
     {

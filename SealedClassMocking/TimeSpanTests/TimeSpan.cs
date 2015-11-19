@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SealedClassMocking.TimeSpanTests
+namespace ProgrammingTests.TimeSpanTests
 {
     public enum TimeSpan
     {

@@ -1,7 +1,7 @@
 ﻿using System.Runtime.Serialization;
 using NUnit.Framework;
 
-namespace SealedClassMocking.DataContractTests
+namespace ProgrammingTests.DataContractTests
 {
     [DataContract(IsReference = true,Name = "tests",Namespace = "www.namespace.ie")]
     public class DateContractTest

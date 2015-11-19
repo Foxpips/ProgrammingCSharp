@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace SealedClassMocking.DescriptiveEnums
+namespace ProgrammingTests.DescriptiveEnums
 {
     public enum ScheduleEnum
     {

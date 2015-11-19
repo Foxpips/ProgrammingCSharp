@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Linq;
 using NUnit.Framework;
-using Rhino.Mocks.Constraints;
 
-namespace SealedClassMocking.EnumTester
+namespace ProgrammingTests.EnumTester
 {
     public class TestEnums
     {

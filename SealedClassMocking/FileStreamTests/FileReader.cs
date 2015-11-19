@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
-using SealedClassMocking.Extensions;
+using ProgrammingTests.Extensions;
 
-namespace SealedClassMocking.FileStreamTests
+namespace ProgrammingTests.FileStreamTests
 {
     public class FileReader
     {
@@ -59,9 +59,23 @@ namespace SealedClassMocking.FileStreamTests
                 {
                     var readByte = fileStream.ReadByte();
                     Console.WriteLine(readByte);
-                    dataArray[i] = (byte) readByte;
+                    dataArray[i] = (byte)readByte;
                 }
                 Console.WriteLine(Encoding.UTF8.GetString(dataArray));
+            }
+        }
+
+        [Test]
+        public void FileStream_ReadBy_StreamReader()
+        {
+            Action<string> print = Console.WriteLine;
+
+            using (var fileStream = new FileStream(_getCurrentDirectory + TestTxt, FileMode.Open, FileAccess.Read))
+            {
+                using (var streamReader = new StreamReader(fileStream))
+                {
+                    print(streamReader.ReadToEnd());
+                }
             }
         }
     }

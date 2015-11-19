@@ -2,7 +2,7 @@
 using AutoMapper;
 using NUnit.Framework;
 
-namespace SealedClassMocking.MappingTests
+namespace ProgrammingTests.MappingTests
 {
     public class TestMapper
     {

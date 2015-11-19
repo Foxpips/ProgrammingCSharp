@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using NUnit.Framework;
 
-namespace SealedClassMocking.AssemblyLoadTests
+namespace ProgrammingTests.AssemblyLoadTests
 {
     public class AssemblyTests
     {

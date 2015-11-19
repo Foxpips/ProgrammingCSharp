@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using NUnit.Framework;
 
-namespace SealedClassMocking.JsonTests
+namespace ProgrammingTests.JsonTests
 {
     public class JsonDynamicDeserializationTests
     {

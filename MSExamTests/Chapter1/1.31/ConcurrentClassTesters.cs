@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using SealedClassMocking.Extensions;
 
 namespace MSExamTests.Chapter1._1._31
 {

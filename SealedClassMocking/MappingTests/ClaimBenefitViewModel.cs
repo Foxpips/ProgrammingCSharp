@@ -1,6 +1,6 @@
 using System;
 
-namespace SealedClassMocking.MappingTests
+namespace ProgrammingTests.MappingTests
 {
     public class ClaimBenefitViewModel
     {

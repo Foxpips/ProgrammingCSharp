@@ -3,7 +3,7 @@ using System.Data;
 using System.Linq.Expressions;
 using NUnit.Framework;
 
-namespace SealedClassMocking.DateComparer
+namespace ProgrammingTests.DateComparer
 {
     public static class Extensions
     {

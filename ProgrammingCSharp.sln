@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SealedClassMocking", "SealedClassMocking\SealedClassMocking.csproj", "{7A055CEC-AC23-42CD-B867-310C703B520D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingTests", "SealedClassMocking\ProgrammingTests.csproj", "{7A055CEC-AC23-42CD-B867-310C703B520D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVirtualProj", "TestVirtualProj\TestVirtualProj.csproj", "{063957A9-F7FF-43FB-B1B4-7D8A5F8D2678}"
 EndProject

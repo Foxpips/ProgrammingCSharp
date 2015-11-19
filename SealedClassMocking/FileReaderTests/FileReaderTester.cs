@@ -1,10 +1,9 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Web;
 using NUnit.Framework;
 
-namespace SealedClassMocking.FileReaderTests
+namespace ProgrammingTests.FileReaderTests
 {
     public class FileReaderTester
     {
