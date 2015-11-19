@@ -85,7 +85,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SealedClassMocking\ProgrammingTests.csproj">
+    <ProjectReference Include="..\ProgrammingTests\ProgrammingTests.csproj">
       <Project>{7a055cec-ac23-42cd-b867-310c703b520d}</Project>
       <Name>ProgrammingTests</Name>
     </ProjectReference>
