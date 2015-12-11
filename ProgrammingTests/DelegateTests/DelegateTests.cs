@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using NUnit.Framework;
+using ProgrammingTests.Events;
 
 namespace ProgrammingTests.DelegateTests
 {
@@ -16,6 +18,11 @@ namespace ProgrammingTests.DelegateTests
             {
                 _users.Add(name);
                 callback(name, _users.Count);
+            }
+
+            public void AddUser2(string name = "Hello")
+            {
+                var user = new User(name);
             }
         }
 
@@ -41,6 +48,43 @@ namespace ProgrammingTests.DelegateTests
                 runner.Add("John");
                 runner.Add("Scot");
             }
+
+            [Test]
+            public void Method_Scenario_UserTRacker()
+            {
+                var userTracker = new UserTracker();
+                userTracker.AddUser2("Simon");
+            }
+        }
+    }
+
+    public class User
+    {
+        private string _name;
+
+        public delegate void Renamed(object sender, RenamedEventArgs e);
+
+        //events can only appear on the left hand side of += or -= and cannot be invoke by another class
+//        public EventHandler<RenamedEventArgs> Renamed2;
+        public event EventHandler<RenamedEventArgs> Renamed2;
+
+        public delegate void Delmethod(int x, int y);
+
+        public User(string name)
+        {
+            SetDelegate();
+            _name = name;
+        }
+
+        public void SetDelegate()
+        {
+            Delmethod del = (x, y) => Console.WriteLine(1);
+        }
+
+        public virtual void OnRenamed2(RenamedEventArgs e)
+        {
+            var handler = Renamed2;
+            if (handler != null) handler.Raise(this, e);
         }
     }
 }

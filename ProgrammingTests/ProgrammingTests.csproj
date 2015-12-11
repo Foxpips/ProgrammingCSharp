@@ -64,6 +64,8 @@
     <Compile Include="ArrayTests\Box.cs" />
     <Compile Include="AssemblyLoadTests\AssemblyTests.cs" />
     <Compile Include="Async\AsyncTester.cs" />
+    <Compile Include="Attributes\AttributeTests.cs" />
+    <Compile Include="Attributes\DynamicAttribute.cs" />
     <Compile Include="Bomi\ICustomer.cs" />
     <Compile Include="Bomi\Person.cs" />
     <Compile Include="BoxingTests\BoxTest.cs" />
@@ -77,11 +79,15 @@
     <Compile Include="DescriptiveEnums\EnumExtensions.cs" />
     <Compile Include="DescriptiveEnums\EnumTests.cs" />
     <Compile Include="DescriptiveEnums\ScheduleEnum.cs" />
+    <Compile Include="DictionaryTests\Actionary.cs" />
     <Compile Include="DictionaryTests\TryGetDictionaryTests.cs" />
     <Compile Include="EnumTester\TestEnums.cs" />
+    <Compile Include="Events\EventDelegateTester.cs" />
+    <Compile Include="Events\IMailManager.cs" />
     <Compile Include="Extensions\FrameworkExtensions.cs" />
     <Compile Include="FileReaderTests\FileReaderTester.cs" />
     <Compile Include="FileStreamTests\FileReader.cs" />
+    <Compile Include="FinalizerTests\UnmanagedHandler.cs" />
     <Compile Include="Generics\IPerson.cs" />
     <Compile Include="IEnumerbaleTests\CustomCollection.cs" />
     <Compile Include="IEnumerbaleTests\CustomCollectionTests.cs" />
@@ -90,6 +96,7 @@
     <Compile Include="IEnumerbaleTests\PersonComparer.cs" />
     <Compile Include="Interfaces\InterfaceTester.cs" />
     <Compile Include="IntTests\IntegerTester.cs" />
+    <Compile Include="IOrder.cs" />
     <Compile Include="JsonTests\JsonDynamicDeserializationTests.cs" />
     <Compile Include="MappingTests\CbMapper.cs" />
     <Compile Include="MappingTests\CbMapperWithResolver.cs" />
@@ -115,7 +122,10 @@
     <Compile Include="TimeSpanTests\RecurrentTimeBase.cs" />
     <Compile Include="TimeSpanTests\TestOrderStringsAndNumbers.cs" />
     <Compile Include="TimeSpanTests\TimeSpan.cs" />
+    <Compile Include="Tuple\Base.cs" />
     <Compile Include="Tuple\DbObject.cs" />
+    <Compile Include="Tuple\Movement.cs" />
+    <Compile Include="Tuple\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -39,7 +39,7 @@ namespace ProgrammingTests.Interfaces
         }
     }
 
-    internal class Order : IEntity
+    internal class Order : IEntity, Tuple.IEntity
     {
 
         public string S { get; protected internal set; }

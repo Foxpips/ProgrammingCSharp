@@ -35,11 +35,14 @@ namespace ProgrammingTests
         {
             var bytes = System.Text.Encoding.UTF8.GetBytes("Hello there");
 
-            using (var streamReader = new StreamReader(new MemoryStream(bytes)))
+            var memoryStream = new MemoryStream(bytes);
+            using (var streamReader = new StreamReader(memoryStream))
             {
                 Console.WriteLine(streamReader.ReadToEnd());
             }
         }
+
+
 
         [Test]
         public void Queue_vs_Stack()

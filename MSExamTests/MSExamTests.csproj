@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chapter1.2\PLinqForAll.cs" />
+    <Compile Include="Chapter1.3\CompilerOptimizationTests.cs" />
+    <Compile Include="Chapter1.3\LoopingTask.cs" />
     <Compile Include="Chapter1\1.31\ConcurrentBagTester.cs" />
     <Compile Include="Chapter1\1.31\ConcurrentClassTesters.cs" />
     <Compile Include="Chapter1\1.31\Person.cs" />

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace ProgrammingTests.Extensions
 {
@@ -28,6 +29,11 @@ namespace ProgrammingTests.Extensions
             Array.Sort(array);
         
             collection = array;
+        }
+
+        public static byte[] ToByteArray(this string content)
+        {
+            return Encoding.ASCII.GetBytes(content);
         }
     }
 }
