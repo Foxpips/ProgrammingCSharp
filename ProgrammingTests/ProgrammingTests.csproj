@@ -39,6 +39,7 @@
     <Reference Include="AutoMapper.Net4">
       <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -53,6 +54,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -81,13 +83,16 @@
     <Compile Include="DescriptiveEnums\ScheduleEnum.cs" />
     <Compile Include="DictionaryTests\Actionary.cs" />
     <Compile Include="DictionaryTests\TryGetDictionaryTests.cs" />
+    <Compile Include="EmployeeRepo.cs" />
     <Compile Include="EnumTester\TestEnums.cs" />
     <Compile Include="Events\EventDelegateTester.cs" />
     <Compile Include="Events\IMailManager.cs" />
     <Compile Include="Extensions\FrameworkExtensions.cs" />
     <Compile Include="FileReaderTests\FileReaderTester.cs" />
     <Compile Include="FileStreamTests\FileReader.cs" />
+    <Compile Include="FileUpdater.cs" />
     <Compile Include="FinalizerTests\UnmanagedHandler.cs" />
+    <Compile Include="FuncsAndGenerics.cs" />
     <Compile Include="Generics\IPerson.cs" />
     <Compile Include="IEnumerbaleTests\CustomCollection.cs" />
     <Compile Include="IEnumerbaleTests\CustomCollectionTests.cs" />
@@ -98,6 +103,7 @@
     <Compile Include="IntTests\IntegerTester.cs" />
     <Compile Include="IOrder.cs" />
     <Compile Include="JsonTests\JsonDynamicDeserializationTests.cs" />
+    <Compile Include="MailingListTest.cs" />
     <Compile Include="MappingTests\CbMapper.cs" />
     <Compile Include="MappingTests\CbMapperWithResolver.cs" />
     <Compile Include="MappingTests\ClaimBenefitDto.cs" />
@@ -106,10 +112,12 @@
     <Compile Include="MappingTests\TestMapper.cs" />
     <Compile Include="DictionaryTests\TestMonth.cs" />
     <Compile Include="MsTest.cs" />
+    <Compile Include="MyCustomEventTester.cs" />
     <Compile Include="NullableDateTests\TestHasValue.cs" />
     <Compile Include="PLinq\PlinqExceptions_2.cs" />
     <Compile Include="SmallestNumberTest\buildLowestNumTests.cs" />
     <Compile Include="SmallestNumberTest\SmallestNumberTests.cs" />
+    <Compile Include="SortSelfTests.cs" />
     <Compile Include="StringConcatenationProfiling\StringProfiler.cs" />
     <Compile Include="StringConcatenationProfiling\Timer.cs" />
     <Compile Include="StringConcatenationTests\BuilderVsConcat.cs" />

@@ -23,12 +23,15 @@ namespace ProgrammingTests.Extensions
             }
         }
 
-        public static void SortSelf<T>(this IEnumerable<T> collection) where T : IComparable<T>
+        public static ICollection<T> SortSelf<T>(this ICollection<T> collection) where T : IComparable<T>
         {
             var array = collection.ToArray();
             Array.Sort(array);
-        
-            collection = array;
+
+            collection.Clear();
+            collection.AddAll(array);
+
+            return collection;
         }
 
         public static byte[] ToByteArray(this string content)

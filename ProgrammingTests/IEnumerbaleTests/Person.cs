@@ -20,6 +20,9 @@ namespace ProgrammingTests.IEnumerbaleTests
 
         public int CompareTo(Person other)
         {
+            int x = 10;
+
+//            x.CompareTo();
             var compareTo = string.Compare(FirstName, other.FirstName, StringComparison.OrdinalIgnoreCase);
             return compareTo;
         }
